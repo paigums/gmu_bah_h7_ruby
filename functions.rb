@@ -1,7 +1,6 @@
 # Return a reversed copy of the array
 
 def reverse(an_array)
-	an_array = ['1', '2', '3']
 	return an_array.reverse
 end
 
