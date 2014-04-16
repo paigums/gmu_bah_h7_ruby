@@ -8,7 +8,7 @@ end
 # Letters should be lowercase before counting
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
-	a_string.downcase.split
+	return a_string.downcase.split
 end
 
 # Sum all the numbers in the array
