@@ -8,7 +8,10 @@ end
 # Letters should be lowercase before counting
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
-	return a_string.downcase.split
+	a_string.downcase
+	a_string.split("").each do |x|
+		puts x.size
+	end
 end
 
 # Sum all the numbers in the array
@@ -17,8 +20,13 @@ end
 # (Hint: the is_a? or respond_to? methods might be useful here)
 # 
 def sum_only_numbers(an_array)
-numbers = an_array.select{ |x| x.is_a?(Numeric) ? x:nil }.compact
-numbers.inject(0) { |sum, i|sum + i }
+	x = 0
+	an_array.each do |y|
+		if y.is_a?(Numeric) 
+		x = x+y
+		end
+	end
+	return x
 end
 
 # For i from 1 to 100, return an array.
