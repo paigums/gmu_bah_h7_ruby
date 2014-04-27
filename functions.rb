@@ -10,7 +10,7 @@ end
 def histogram(a_string)
 	a_string.downcase
 	a_string.split("").each do |x|
-		puts x.size
+		puts x
 	end
 end
 
